@@ -1,0 +1,16 @@
+extends ../template
+
+block title
+	| Каталог мобильных телефонов
+block content
+	.container
+		h2.sidebar__title
+				| Мобильные телефоны
+		.wrapper-content
+			include ../blocks/content/_sidebar
+			main.content__main.main
+				include ../blocks/content/_sort
+				include ../blocks/content/_content
+		include ../blocks/content/_info
+
+

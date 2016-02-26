@@ -1,0 +1,367 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$block-a-name: 'block-a';
+$block-a-x: 0px;
+$block-a-y: 284px;
+$block-a-offset-x: 0px;
+$block-a-offset-y: -284px;
+$block-a-width: 16px;
+$block-a-height: 16px;
+$block-a-total-width: 43px;
+$block-a-total-height: 886px;
+$block-a-image: 'sprite.png';
+$block-a: (0px, 284px, 0px, -284px, 16px, 16px, 43px, 886px, 'sprite.png', 'block-a', );
+$block-name: 'block';
+$block-x: 0px;
+$block-y: 310px;
+$block-offset-x: 0px;
+$block-offset-y: -310px;
+$block-width: 16px;
+$block-height: 16px;
+$block-total-width: 43px;
+$block-total-height: 886px;
+$block-image: 'sprite.png';
+$block: (0px, 310px, 0px, -310px, 16px, 16px, 43px, 886px, 'sprite.png', 'block', );
+$check-hover-name: 'check-hover';
+$check-hover-x: 0px;
+$check-hover-y: 0px;
+$check-hover-offset-x: 0px;
+$check-hover-offset-y: 0px;
+$check-hover-width: 13px;
+$check-hover-height: 10px;
+$check-hover-total-width: 43px;
+$check-hover-total-height: 886px;
+$check-hover-image: 'sprite.png';
+$check-hover: (0px, 0px, 0px, 0px, 13px, 10px, 43px, 886px, 'sprite.png', 'check-hover', );
+$check-name: 'check';
+$check-x: 0px;
+$check-y: 20px;
+$check-offset-x: 0px;
+$check-offset-y: -20px;
+$check-width: 13px;
+$check-height: 10px;
+$check-total-width: 43px;
+$check-total-height: 886px;
+$check-image: 'sprite.png';
+$check: (0px, 20px, 0px, -20px, 13px, 10px, 43px, 886px, 'sprite.png', 'check', );
+$down-arrow-name: 'down-arrow';
+$down-arrow-x: 0px;
+$down-arrow-y: 40px;
+$down-arrow-offset-x: 0px;
+$down-arrow-offset-y: -40px;
+$down-arrow-width: 18px;
+$down-arrow-height: 11px;
+$down-arrow-total-width: 43px;
+$down-arrow-total-height: 886px;
+$down-arrow-image: 'sprite.png';
+$down-arrow: (0px, 40px, 0px, -40px, 18px, 11px, 43px, 886px, 'sprite.png', 'down-arrow', );
+$fb-b-hover-name: 'fb-b-hover';
+$fb-b-hover-x: 0px;
+$fb-b-hover-y: 684px;
+$fb-b-hover-offset-x: 0px;
+$fb-b-hover-offset-y: -684px;
+$fb-b-hover-width: 43px;
+$fb-b-hover-height: 43px;
+$fb-b-hover-total-width: 43px;
+$fb-b-hover-total-height: 886px;
+$fb-b-hover-image: 'sprite.png';
+$fb-b-hover: (0px, 684px, 0px, -684px, 43px, 43px, 43px, 886px, 'sprite.png', 'fb-b-hover', );
+$fb-b-name: 'fb-b';
+$fb-b-x: 0px;
+$fb-b-y: 843px;
+$fb-b-offset-x: 0px;
+$fb-b-offset-y: -843px;
+$fb-b-width: 43px;
+$fb-b-height: 43px;
+$fb-b-total-width: 43px;
+$fb-b-total-height: 886px;
+$fb-b-image: 'sprite.png';
+$fb-b: (0px, 843px, 0px, -843px, 43px, 43px, 43px, 886px, 'sprite.png', 'fb-b', );
+$fb-hover-name: 'fb-hover';
+$fb-hover-x: 0px;
+$fb-hover-y: 470px;
+$fb-hover-offset-x: 0px;
+$fb-hover-offset-y: -470px;
+$fb-hover-width: 26px;
+$fb-hover-height: 26px;
+$fb-hover-total-width: 43px;
+$fb-hover-total-height: 886px;
+$fb-hover-image: 'sprite.png';
+$fb-hover: (0px, 470px, 0px, -470px, 26px, 26px, 43px, 886px, 'sprite.png', 'fb-hover', );
+$fb-name: 'fb';
+$fb-x: 0px;
+$fb-y: 398px;
+$fb-offset-x: 0px;
+$fb-offset-y: -398px;
+$fb-width: 26px;
+$fb-height: 26px;
+$fb-total-width: 43px;
+$fb-total-height: 886px;
+$fb-image: 'sprite.png';
+$fb: (0px, 398px, 0px, -398px, 26px, 26px, 43px, 886px, 'sprite.png', 'fb', );
+$list-a-name: 'list-a';
+$list-a-x: 0px;
+$list-a-y: 206px;
+$list-a-offset-x: 0px;
+$list-a-offset-y: -206px;
+$list-a-width: 16px;
+$list-a-height: 16px;
+$list-a-total-width: 43px;
+$list-a-total-height: 886px;
+$list-a-image: 'sprite.png';
+$list-a: (0px, 206px, 0px, -206px, 16px, 16px, 43px, 886px, 'sprite.png', 'list-a', );
+$list-name: 'list';
+$list-x: 0px;
+$list-y: 232px;
+$list-offset-x: 0px;
+$list-offset-y: -232px;
+$list-width: 16px;
+$list-height: 16px;
+$list-total-width: 43px;
+$list-total-height: 886px;
+$list-image: 'sprite.png';
+$list: (0px, 232px, 0px, -232px, 16px, 16px, 43px, 886px, 'sprite.png', 'list', );
+$map-name: 'map';
+$map-x: 0px;
+$map-y: 258px;
+$map-offset-x: 0px;
+$map-offset-y: -258px;
+$map-width: 11px;
+$map-height: 16px;
+$map-total-width: 43px;
+$map-total-height: 886px;
+$map-image: 'sprite.png';
+$map: (0px, 258px, 0px, -258px, 11px, 16px, 43px, 886px, 'sprite.png', 'map', );
+$slider-name: 'slider';
+$slider-x: 0px;
+$slider-y: 106px;
+$slider-offset-x: 0px;
+$slider-offset-y: -106px;
+$slider-width: 8px;
+$slider-height: 14px;
+$slider-total-width: 43px;
+$slider-total-height: 886px;
+$slider-image: 'sprite.png';
+$slider: (0px, 106px, 0px, -106px, 8px, 14px, 43px, 886px, 'sprite.png', 'slider', );
+$star-empty-name: 'star-empty';
+$star-empty-x: 0px;
+$star-empty-y: 82px;
+$star-empty-offset-x: 0px;
+$star-empty-offset-y: -82px;
+$star-empty-width: 15px;
+$star-empty-height: 14px;
+$star-empty-total-width: 43px;
+$star-empty-total-height: 886px;
+$star-empty-image: 'sprite.png';
+$star-empty: (0px, 82px, 0px, -82px, 15px, 14px, 43px, 886px, 'sprite.png', 'star-empty', );
+$star-name: 'star';
+$star-x: 0px;
+$star-y: 130px;
+$star-offset-x: 0px;
+$star-offset-y: -130px;
+$star-width: 15px;
+$star-height: 14px;
+$star-total-width: 43px;
+$star-total-height: 886px;
+$star-image: 'sprite.png';
+$star: (0px, 130px, 0px, -130px, 15px, 14px, 43px, 886px, 'sprite.png', 'star', );
+$table-a-name: 'table-a';
+$table-a-x: 0px;
+$table-a-y: 180px;
+$table-a-offset-x: 0px;
+$table-a-offset-y: -180px;
+$table-a-width: 16px;
+$table-a-height: 16px;
+$table-a-total-width: 43px;
+$table-a-total-height: 886px;
+$table-a-image: 'sprite.png';
+$table-a: (0px, 180px, 0px, -180px, 16px, 16px, 43px, 886px, 'sprite.png', 'table-a', );
+$table-name: 'table';
+$table-x: 0px;
+$table-y: 154px;
+$table-offset-x: 0px;
+$table-offset-y: -154px;
+$table-width: 16px;
+$table-height: 16px;
+$table-total-width: 43px;
+$table-total-height: 886px;
+$table-image: 'sprite.png';
+$table: (0px, 154px, 0px, -154px, 16px, 16px, 43px, 886px, 'sprite.png', 'table', );
+$tel-name: 'tel';
+$tel-x: 0px;
+$tel-y: 336px;
+$tel-offset-x: 0px;
+$tel-offset-y: -336px;
+$tel-width: 11px;
+$tel-height: 16px;
+$tel-total-width: 43px;
+$tel-total-height: 886px;
+$tel-image: 'sprite.png';
+$tel: (0px, 336px, 0px, -336px, 11px, 16px, 43px, 886px, 'sprite.png', 'tel', );
+$tw-b-hover-name: 'tw-b-hover';
+$tw-b-hover-x: 0px;
+$tw-b-hover-y: 631px;
+$tw-b-hover-offset-x: 0px;
+$tw-b-hover-offset-y: -631px;
+$tw-b-hover-width: 43px;
+$tw-b-hover-height: 43px;
+$tw-b-hover-total-width: 43px;
+$tw-b-hover-total-height: 886px;
+$tw-b-hover-image: 'sprite.png';
+$tw-b-hover: (0px, 631px, 0px, -631px, 43px, 43px, 43px, 886px, 'sprite.png', 'tw-b-hover', );
+$tw-b-name: 'tw-b';
+$tw-b-x: 0px;
+$tw-b-y: 578px;
+$tw-b-offset-x: 0px;
+$tw-b-offset-y: -578px;
+$tw-b-width: 43px;
+$tw-b-height: 43px;
+$tw-b-total-width: 43px;
+$tw-b-total-height: 886px;
+$tw-b-image: 'sprite.png';
+$tw-b: (0px, 578px, 0px, -578px, 43px, 43px, 43px, 886px, 'sprite.png', 'tw-b', );
+$tw-h-name: 'tw-h';
+$tw-h-x: 0px;
+$tw-h-y: 506px;
+$tw-h-offset-x: 0px;
+$tw-h-offset-y: -506px;
+$tw-h-width: 26px;
+$tw-h-height: 26px;
+$tw-h-total-width: 43px;
+$tw-h-total-height: 886px;
+$tw-h-image: 'sprite.png';
+$tw-h: (0px, 506px, 0px, -506px, 26px, 26px, 43px, 886px, 'sprite.png', 'tw-h', );
+$tw-name: 'tw';
+$tw-x: 0px;
+$tw-y: 362px;
+$tw-offset-x: 0px;
+$tw-offset-y: -362px;
+$tw-width: 26px;
+$tw-height: 26px;
+$tw-total-width: 43px;
+$tw-total-height: 886px;
+$tw-image: 'sprite.png';
+$tw: (0px, 362px, 0px, -362px, 26px, 26px, 43px, 886px, 'sprite.png', 'tw', );
+$up-arrow-name: 'up-arrow';
+$up-arrow-x: 0px;
+$up-arrow-y: 61px;
+$up-arrow-offset-x: 0px;
+$up-arrow-offset-y: -61px;
+$up-arrow-width: 18px;
+$up-arrow-height: 11px;
+$up-arrow-total-width: 43px;
+$up-arrow-total-height: 886px;
+$up-arrow-image: 'sprite.png';
+$up-arrow: (0px, 61px, 0px, -61px, 18px, 11px, 43px, 886px, 'sprite.png', 'up-arrow', );
+$vk-b-hover-name: 'vk-b-hover';
+$vk-b-hover-x: 0px;
+$vk-b-hover-y: 737px;
+$vk-b-hover-offset-x: 0px;
+$vk-b-hover-offset-y: -737px;
+$vk-b-hover-width: 43px;
+$vk-b-hover-height: 43px;
+$vk-b-hover-total-width: 43px;
+$vk-b-hover-total-height: 886px;
+$vk-b-hover-image: 'sprite.png';
+$vk-b-hover: (0px, 737px, 0px, -737px, 43px, 43px, 43px, 886px, 'sprite.png', 'vk-b-hover', );
+$vk-b-name: 'vk-b';
+$vk-b-x: 0px;
+$vk-b-y: 790px;
+$vk-b-offset-x: 0px;
+$vk-b-offset-y: -790px;
+$vk-b-width: 43px;
+$vk-b-height: 43px;
+$vk-b-total-width: 43px;
+$vk-b-total-height: 886px;
+$vk-b-image: 'sprite.png';
+$vk-b: (0px, 790px, 0px, -790px, 43px, 43px, 43px, 886px, 'sprite.png', 'vk-b', );
+$vk-h-name: 'vk-h';
+$vk-h-x: 0px;
+$vk-h-y: 434px;
+$vk-h-offset-x: 0px;
+$vk-h-offset-y: -434px;
+$vk-h-width: 26px;
+$vk-h-height: 26px;
+$vk-h-total-width: 43px;
+$vk-h-total-height: 886px;
+$vk-h-image: 'sprite.png';
+$vk-h: (0px, 434px, 0px, -434px, 26px, 26px, 43px, 886px, 'sprite.png', 'vk-h', );
+$vk-name: 'vk';
+$vk-x: 0px;
+$vk-y: 542px;
+$vk-offset-x: 0px;
+$vk-offset-y: -542px;
+$vk-width: 26px;
+$vk-height: 26px;
+$vk-total-width: 43px;
+$vk-total-height: 886px;
+$vk-image: 'sprite.png';
+$vk: (0px, 542px, 0px, -542px, 26px, 26px, 43px, 886px, 'sprite.png', 'vk', );
+$spritesheet-width: 43px;
+$spritesheet-height: 886px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($block-a, $block, $check-hover, $check, $down-arrow, $fb-b-hover, $fb-b, $fb-hover, $fb, $list-a, $list, $map, $slider, $star-empty, $star, $table-a, $table, $tel, $tw-b-hover, $tw-b, $tw-h, $tw, $up-arrow, $vk-b-hover, $vk-b, $vk-h, $vk, );
+$spritesheet: (43px, 886px, 'sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

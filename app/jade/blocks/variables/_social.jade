@@ -1,0 +1,9 @@
+case position
+	when "top": - var type = "dark"
+	when "bottom": - var type = "light"
+- var socialItemList = ['fb', 'vk', 'tw']
+ul(class=position + "__social")
+	each socialItem in socialItemList
+		li(class="social__item social__item_" + type) 
+			//- href из массива ?
+			a(href="#", target="_blank", class="social__link" + " social__link_" + type + "-" + socialItem)= socialItem

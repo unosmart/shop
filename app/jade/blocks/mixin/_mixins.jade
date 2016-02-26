@@ -1,0 +1,58 @@
+mixin nav(items, className, active,mod)
+  ul(class=className)
+    each item in items
+      li(class="#{className}__item")
+        a(href="#" class="#{className}__link" + (mod ? ' #{className}__link_#{mod}' : '') + (active && active == item ? ' #{className}__link_active' : ''))= item
+mixin social(class_suffix)
+    ul(class="social__block" + (class_suffix ? ' social__block_#{class_suffix}' : ''))
+        - var social = ['fb', 'vk', 'tw']
+            each item in social
+                li(class="social__item" + (class_suffix ? ' social__item_#{class_suffix}' : ''))
+                    a(href="#" class="socials__link" + (class_suffix ? ' social__link_#{class_suffix}_#{item}' : ''))= item
+mixin bredcrums(items)
+    .bredcrums
+        ul.bredcrums__list
+            each item, i in items
+                li.bredcrums__item
+                    a.bredcrums__link(href="#" class="#{i == items.length - 1 ? 'bredcrums__link_active' : ''}")= item
+mixin product(content)
+  ul.block.product
+    each item in content
+      li.block.product__item
+        .block.product__item__image.image
+          .image__big
+            img(src="#{item.images.image1}", alt="#{item.name}")
+          ul.image__list
+            each value, key in item.images
+              li.image__item
+                a(href="#").image__item-link
+                  img(src="#{value}", alt="#{value}").image__item-thumb
+        .block.product__item__articul.articul
+          span.articul__text Артикул
+          span.articul__value #{item.articul}
+        .block.product__item__box
+          .block.product__item__name.name #{item.name}
+          ul.block.product__item__charact.charact
+            each value, key in item.charact
+              if (value)
+                li.charact__line
+                  span.line__text_left #{key}
+                  span.line__text_right #{value}
+              else
+                li.charact__line
+          .block.product__item__info.info.
+            #{item.info}
+          .block.product__item__ratio.ratio
+            ul.ratio__list
+              - for (var i = 0; i<5; i++)
+                if i < item.ratio
+                  li.ratio__star.ratio__star-item
+                else
+                  li.ratio__star.ratio__star-empty
+            span.ratio__number #{item.ratio}
+        .block.product__item__price.price
+          span.price__value #{item.price}
+          span.price__ruble p
+        .basket-box
+          .block.product__item__presence.presence В наличии
+          button.block.product__item__basket.basket В корзину

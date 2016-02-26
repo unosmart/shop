@@ -1,0 +1,70 @@
+aside.sidebar
+    +nav(['Флагманы', 'Бюджетная линейка'],'sidebar__menu','Бюджетная линейка','grey')
+    form.form-sidebar
+        .form-sidebar__section
+          .form-sidebar__title
+               a(href="#").trigger Наличие в магазинах
+          .expand-content
+            ul.form-sidebar__list
+                - var items = ['Во всех магазинах','В ближайшем ко мне магазине']
+                    each item, ndx in items
+                        li.form-sidebar__item
+                            label.radio-label
+                                - if (ndx == 0)
+                                    input.radio-input(type='radio' checked name='shops')
+                                - else
+                                    input.radio-input(type='radio' name='shops')
+                                .form-sidebar__element
+                                .form-sidebar__element-text= item
+        .form-sidebar__section
+          .form-sidebar__title
+               a(href="#").trigger Бренды
+          .expand-content
+            ul.form-sidebar__list
+                - var items = ['Lenovo','Apple', 'Samsung', 'Asus', 'Motorola']
+                    each item in items
+                        li.form-sidebar__item.form-sidebar__item
+                            label.checkbox-label
+                                input.checkbox-input(type='checkbox', name='brands', id='lenovo')
+                                .form-sidebar__element_checkbox
+                                .form-sidebar__element-text= item
+            .clear-checkbox
+             input.clear-checkbox-link(type='reset', value='Сбросить фильтр')                    
+        .form-sidebar__section
+          .form-sidebar__title
+              a(href="#").trigger Цена
+          .expand-content
+            ul.form-sidebar__list.price-box
+              li.sidebar-list__item
+                label.price-box__text(for="minCost") от
+                input(type="text" name="minCost" value="2667" id="minCost").price-box__field
+                label.price-box__text(for="maxCost") до
+                input(type="text" name="maxCost" value="9405" id="maxCost").price-box__field
+              .price-box__slider#slider
+        .form-sidebar__section
+          .form-sidebar__title
+               a(href="#").trigger Цвет
+          .expand-content
+            ul.form-sidebar__list.color-box
+                    - var colors = ['#ffffff','#cccccc','#000000','#0a3153','#ff1800','#fff343','#fb914a','#92c37c','#40a6ff','#9870ad','#dc78ad','#7f401d']
+                    each color in colors
+                        li(style="background: "+ color).color-box__item
+        .form-sidebar__section
+          .form-sidebar__title
+               a(href="#").trigger Операционные системы
+          .expand-content
+            ul.form-sidebar__list
+                - var items = ['Android','iOS', 'Windows Mobile', 'Symbian', 'Custom']
+                    each item, i in items
+                       li.form-sidebar__item.form-sidebar__item
+                            label.checkbox-label
+                                input.checkbox-input(type='checkbox', name='os', id='android')
+                                .form-sidebar__element_checkbox
+                                .form-sidebar__element-text= item
+            .clear-checkbox
+             a(href="#").clear-checkbox-link Сбросить фильтр
+      
+
+
+
+

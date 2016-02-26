@@ -1,0 +1,14 @@
+.view-block
+    .view-block__sort
+        .view-block__sort__title Сортировать по
+        select(name="sort" class="view-block__sort__select")
+            option(value="по цене") по цене
+            option(value="по популярности") по популярности
+    ul.view-block__catalog
+        span.view-block__catalog__text Вид каталога
+        li.view-block__catalog__item
+          a(href="#").view-block__catalog__link.view-block__catalog__link_list list
+        li.view-block__catalog__item
+          a(href="#").view-block__catalog__link.view-block__catalog__link_block.active block
+        li.view-block__catalog__item
+          a(href="#").view-block__catalog__link.view-block__catalog__link_table table
