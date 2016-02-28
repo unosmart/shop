@@ -10,6 +10,7 @@
       $('.view-block__catalog__link_block').on('click', _showBlock)
       $('.view-block__catalog__link_list').on('click',_showList)
       $('.view-block__catalog__link_table').on('click',_showTable)
+      $('.image__item-link').on('click',_imgSlider)
       $('.color-box__item').on('click', _colorCheck)
     };
 
@@ -100,6 +101,20 @@ var _resetFilter = function(event) {
 }
 $('.view-block__sort__select').select2({minimumResultsForSearch: Infinity});
 
+function _imgSlider(e) {
+e.preventDefault();
+  var $this = $(this),
+      block = $this.closest('.image').find('.image__big'),
+      path = $this.find('img').attr('src');
+  if (!$this.hasClass('active')) {
+    $this.addClass('active');
+    $this.siblings().removeClass('active');
+    block.find('img').fadeOut(function() {
+    $(this).attr('src', path).fadeIn();
+
+    });
+  }
+};
 // Возвращаем объект (публичные методы)
   return {
     init: init

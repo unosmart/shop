@@ -90,10 +90,13 @@
 }
 .product__item__basket.list{
     text-align: center;
-        margin-bottom: 13px;
+    margin-bottom: 13px;
 }
 .list + .basket-box{
-    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-25%,-50%);
     display: flex;
     flex-flow: column nowrap;
   }
@@ -120,10 +123,12 @@
         border-bottom: none;
       }
       &:hover {
-        box-shadow: 0 1px 5.7px 0.3px rgba(118, 118, 118, 0.75);
+      box-shadow: 0px 0px 5px 1px rgba(118, 118, 118, 0.75);
+      z-index: 2;
       }
       &:active {
-        box-shadow: 0 1px 5.7px 0.3px rgba(118, 118, 118, 0.75);
+      box-shadow: 0px 0px 5px 1px rgba(118, 118, 118, 0.75);
+      z-index: 2;
       }
     &__image {
       float: left;
@@ -136,6 +141,7 @@
       margin-left: 160px;
       padding-top: 10px;
       border-right: 1px solid #dee1e4;
+      min-height: 208px;
     }
     &__name {
       margin-bottom: 20px;
@@ -167,7 +173,7 @@
 .product__item__basket.table{
    display: inline-block;
     vertical-align: middle;
-    text-align: left;
+    text-align: center;
     margin-left: 21px;
 }
 
@@ -185,7 +191,7 @@
     display: inline-flex;
     flex-flow: column wrap;
     width: 100%;
-    //@include border-radius(5px);
+    @include border-radius(5px);
     &__item {
       display: flex;
       justify-content: space-between;
@@ -200,7 +206,6 @@
       &:last-child {
         border-bottom: none;
       }
-      //@include box-sizing;
       &:hover {
       box-shadow: 1px 0px 3.2px 0.6px rgba(153, 153, 153, 0.75);
       z-index: 2;
@@ -218,17 +223,11 @@
       &__charact {
         display: none;
       }
-      &__addtobasket {
-        //@include vertical-center;
-        right: 13px;
-      }
       &__presence {
-        //@include vertical-center;
         width: 85px;
         text-align: right;
       }
       &__info {
-        //@include vertical-center;
         max-width: 287px;
         overflow:hidden;
         white-space: nowrap;
@@ -240,7 +239,6 @@
       }
       &__price {
         margin-left: 11px;
-       // @include vertical-center;
       }
       &__articul {
       }

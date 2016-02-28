@@ -10,7 +10,7 @@ var gulp = require("gulp"),
 	rigger = require('gulp-rigger'),
 	// rename = require('gulp-rename'),
 	// useref = require('gulp-useref'),
-	// uglify = require('gulp-uglify'),
+	uglify = require('gulp-uglify'),
 	gulpif = require('gulp-if'),
 	// clear = require('gulp-rimraf'),
 	// wiredep = require('wiredep').stream,
@@ -59,9 +59,7 @@ gulp.task ('watch',function(){
 		gulp.watch(path.watch.sass,['sassBuild']);
 		gulp.watch(path.watch.js);
 		gulp.watch([
-    'prod/*.html',
-    'prod/js/**/*.js',
-    'prod/css/**/*.css'
+    'prod/js/**/*.js'
   ]).on('change',browserSync.reload);
 		// gulp.watch('bower.json',['wiredep'])
 		 });
@@ -113,8 +111,9 @@ gulp.task('fontsBuild', function() {
 gulp.task('jsBuild', function() {
 	gulp.src(path.src.js)
 		.pipe(rigger())
+		.pipe(uglify())
 		.pipe(gulp.dest(path.build.js))
-		 .pipe(browserSync.stream());
+		.pipe(browserSync.stream());
 });
 
 //Следим за bower

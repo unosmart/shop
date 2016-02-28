@@ -21,7 +21,7 @@ mixin product(content)
       li.block.product__item
         .block.product__item__image.image
           .image__big
-            img(src="#{item.images.image1}", alt="#{item.name}")
+            img(src="#{item.images.image1}", alt="#{item.name}",class="image__big__src")
           ul.image__list
             each value, key in item.images
               li.image__item

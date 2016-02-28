@@ -40,10 +40,13 @@ flex-flow: column wrap;
         font-size: 18px;
         font-family: 'open_sanssemibold';
         min-width: 180px;
-        &:before{
-        content: '';
-        @include sprite($tel); 
-        background-repeat: no-repeat;
+            &:before{
+            content: '';
+            @include sprite($tel); 
+            background-repeat: no-repeat;
+            }
+        &__link{
+            color:#333333;
         }
     }
 }

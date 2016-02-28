@@ -14,8 +14,8 @@ aside.sidebar
                                     input.radio-input(type='radio' checked name='shops')
                                 - else
                                     input.radio-input(type='radio' name='shops')
-                                .form-sidebar__element
-                                .form-sidebar__element-text= item
+                                span.form-sidebar__element
+                                span.form-sidebar__element-text= item
         .form-sidebar__section
           .form-sidebar__title
                a(href="#").trigger Бренды
@@ -25,9 +25,9 @@ aside.sidebar
                     each item in items
                         li.form-sidebar__item.form-sidebar__item
                             label.checkbox-label
-                                input.checkbox-input(type='checkbox', name='brands', id='lenovo')
-                                .form-sidebar__element_checkbox
-                                .form-sidebar__element-text= item
+                                input.checkbox-input(type='checkbox', name='brands', id='#{item}')
+                                span.form-sidebar__element_checkbox
+                                span.form-sidebar__element-text= item
             .clear-checkbox
              input.clear-checkbox-link(type='reset', value='Сбросить фильтр')                    
         .form-sidebar__section
@@ -40,7 +40,7 @@ aside.sidebar
                 input(type="text" name="minCost" value="2667" id="minCost").price-box__field
                 label.price-box__text(for="maxCost") до
                 input(type="text" name="maxCost" value="9405" id="maxCost").price-box__field
-              .price-box__slider#slider
+              li.price-box__slider#slider
         .form-sidebar__section
           .form-sidebar__title
                a(href="#").trigger Цвет
@@ -58,9 +58,9 @@ aside.sidebar
                     each item, i in items
                        li.form-sidebar__item.form-sidebar__item
                             label.checkbox-label
-                                input.checkbox-input(type='checkbox', name='os', id='android')
-                                .form-sidebar__element_checkbox
-                                .form-sidebar__element-text= item
+                                input.checkbox-input(type='checkbox', name='os')
+                                span.form-sidebar__element_checkbox
+                                span.form-sidebar__element-text= item
             .clear-checkbox
              a(href="#").clear-checkbox-link Сбросить фильтр
       
